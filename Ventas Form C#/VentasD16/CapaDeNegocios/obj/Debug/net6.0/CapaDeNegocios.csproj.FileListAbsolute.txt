@@ -1,0 +1,15 @@
+C:\Users\AsesinoDecandidatos\source\repos\VentasDilan\CapaDeNegocios\bin\Debug\net6.0\CapaDeNegocios.deps.json
+C:\Users\AsesinoDecandidatos\source\repos\VentasDilan\CapaDeNegocios\bin\Debug\net6.0\CapaDeNegocios.dll
+C:\Users\AsesinoDecandidatos\source\repos\VentasDilan\CapaDeNegocios\bin\Debug\net6.0\CapaDeNegocios.pdb
+C:\Users\AsesinoDecandidatos\source\repos\VentasDilan\CapaDeNegocios\bin\Debug\net6.0\CapaDeDatos.dll
+C:\Users\AsesinoDecandidatos\source\repos\VentasDilan\CapaDeNegocios\bin\Debug\net6.0\CapaDeDatos.pdb
+C:\Users\AsesinoDecandidatos\source\repos\VentasDilan\CapaDeNegocios\obj\Debug\net6.0\CapaDeNegocios.csproj.AssemblyReference.cache
+C:\Users\AsesinoDecandidatos\source\repos\VentasDilan\CapaDeNegocios\obj\Debug\net6.0\CapaDeNegocios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AsesinoDecandidatos\source\repos\VentasDilan\CapaDeNegocios\obj\Debug\net6.0\CapaDeNegocios.AssemblyInfoInputs.cache
+C:\Users\AsesinoDecandidatos\source\repos\VentasDilan\CapaDeNegocios\obj\Debug\net6.0\CapaDeNegocios.AssemblyInfo.cs
+C:\Users\AsesinoDecandidatos\source\repos\VentasDilan\CapaDeNegocios\obj\Debug\net6.0\CapaDeNegocios.csproj.CoreCompileInputs.cache
+C:\Users\AsesinoDecandidatos\source\repos\VentasDilan\CapaDeNegocios\obj\Debug\net6.0\CapaDeNegocios.csproj.CopyComplete
+C:\Users\AsesinoDecandidatos\source\repos\VentasDilan\CapaDeNegocios\obj\Debug\net6.0\CapaDeNegocios.dll
+C:\Users\AsesinoDecandidatos\source\repos\VentasDilan\CapaDeNegocios\obj\Debug\net6.0\refint\CapaDeNegocios.dll
+C:\Users\AsesinoDecandidatos\source\repos\VentasDilan\CapaDeNegocios\obj\Debug\net6.0\CapaDeNegocios.pdb
+C:\Users\AsesinoDecandidatos\source\repos\VentasDilan\CapaDeNegocios\obj\Debug\net6.0\ref\CapaDeNegocios.dll
