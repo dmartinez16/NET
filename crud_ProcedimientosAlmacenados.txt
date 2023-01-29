@@ -1,0 +1,102 @@
+create database DBEmpleado
+
+use DBEmpleado
+
+create table Departamento(
+idDepartamento int primary key identity(1,1),
+nombre varchar(50)
+)
+
+create table Empleado(
+idEmpleado int primary key identity(1,1),
+nombreCompleto varchar(50),
+idDepartamento int references Departamento(idDepartamento),
+sueldo int,
+fechaContrato date
+)
+
+insert into Departamento (nombre) values ('Administracion'),('Publicidad'),('Ventas'),('Comercio')
+select * from Departamento
+
+
+insert into Empleado (nombreCompleto, idDepartamento, sueldo, fechaContrato) 
+values ('Dilan Esnehider Martinez Silva',2,2300000,GETDATE())
+select * from Empleado
+
+
+
+--Procedimientos almacenados
+
+create procedure sp_ListaDepartamentos
+as
+begin
+	select * from Departamento
+end
+
+
+create procedure sp_ListaEmpleados
+as
+begin
+	set dateformat dmy --Formato de la FechaContrato
+
+	select e.idEmpleado as ID_Empleado,e.nombreCompleto as Nombre_Empleado,
+	d.idDepartamento as ID_Departamento,d.nombre as Departamento,
+	e.sueldo as Sueldo_Empleado,CONVERT(char(10),e.fechaContrato,103) as 'FechaContrato' 
+	from Empleado as e
+	join Departamento as d on e.idDepartamento = d.idDepartamento
+end
+
+--Guardar Empleados
+
+create procedure sp_GuardarEmpleado(
+--Parametros
+@nombreCompleto varchar(50),
+@idDepartamento int,
+@sueldo int,
+@fechaContrato varchar(10)
+)
+as
+begin
+	set dateformat dmy --Formato de la FechaContrato
+
+	insert into Empleado (nombreCompleto,idDepartamento,sueldo,fechaContrato) 
+	values (@nombreCompleto,@idDepartamento,@sueldo,convert(date,@fechaContrato))
+end
+
+--Editar Empleados
+
+create procedure sp_EditarEmpleado(
+--Parametros
+@idEmpleado int,
+@nombreCompleto varchar(50),
+@idDepartamento int,
+@sueldo int,
+@fechaContrato varchar(10)
+)
+as
+begin
+	set dateformat dmy --Formato de la FechaContrato
+
+	update Empleado set
+	nombreCompleto = @nombreCompleto,
+	idDepartamento = @idDepartamento,
+	sueldo = @sueldo,
+	fechaContrato = convert(date,@fechaContrato)
+	where idEmpleado = @idEmpleado
+
+end
+
+
+--Eliminar Empleados
+
+create procedure sp_EliminarEmpleado(
+--Parametros
+@idEmpleado int
+)
+as
+begin
+	
+	Delete from Empleado
+	where idEmpleado = @idEmpleado
+
+end
